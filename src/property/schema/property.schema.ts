@@ -9,7 +9,6 @@ export type PropertyDocument = HydratedDocument<Property>
 export class Property {
   @Prop()
   price: number
- 
 
   @Prop({ type: mongoose.Schema.Types.ObjectId, refPath: 'typeModel', required: true })
   type: NewsPaper | Placement
